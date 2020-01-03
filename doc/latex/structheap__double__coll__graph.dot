@@ -1,0 +1,13 @@
+digraph "heap_double"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="heap_double",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" root" ];
+  Node2 [label="heap_double_node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structheap__double__node.html"];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p_node_son_a\np_node_son_b\np_node_father" ];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ev" ];
+  Node3 [label="event",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structevent.html"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" p_particle_a\np_particle_b" ];
+  Node4 [label="partic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpartic.html"];
+}

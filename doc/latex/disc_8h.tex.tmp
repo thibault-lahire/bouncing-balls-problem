@@ -1,0 +1,137 @@
+\hypertarget{disc_8h}{}\section{include/disc.h File Reference}
+\label{disc_8h}\index{include/disc.\+h@{include/disc.\+h}}
+
+
+Draw D\+I\+S\+Cs with S\+DL.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{disc_8h_a37dbdc30935031c05304482e1be89d8f}{color} \{ \\*
+{\bfseries B\+L\+A\+CK}, 
+{\bfseries R\+ED}, 
+{\bfseries G\+R\+E\+EN}, 
+{\bfseries Y\+E\+L\+L\+OW}, 
+\\*
+{\bfseries B\+L\+UE}, 
+{\bfseries M\+A\+G\+E\+N\+TA}, 
+{\bfseries C\+Y\+AN}, 
+{\bfseries W\+H\+I\+TE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{disc_8h_a6458283105ee897b1729eb239bcb20e0}{Create\+Window} (char $\ast$title, int width, int height)
+\item 
+void \hyperlink{disc_8h_a4b0047a8d82b3f053043ca3627d7c403}{Close\+Window} (void)
+\item 
+void \hyperlink{disc_8h_aa75d162c6d06ce8a5201837257310d36}{Wait\+Click} (void)
+\item 
+void \hyperlink{disc_8h_a6266c52504ef9672f00d96e7ceeccf7d}{Empty\+Space} (void)
+\item 
+void \hyperlink{disc_8h_a4e620e68f58b6460f0f27b321ee5c1bd}{Draw\+D\+I\+SC} (double x\+\_\+center, double y\+\_\+center, double radius, enum \hyperlink{disc_8h_a37dbdc30935031c05304482e1be89d8f}{color} \hyperlink{disc_8h_a37dbdc30935031c05304482e1be89d8f}{color})
+\item 
+void \hyperlink{disc_8h_ad263a1366ce57cab2e64d720b74fbbbd}{Update\+Screen} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Draw D\+I\+S\+Cs with S\+DL. 
+
+This module exposes a few functions to ease the use of the S\+DL library, and a D\+I\+SC drawing routine.
+
+Use -\/lm -\/l\+S\+DL when compiling in order to link with math library and S\+DL library.
+
+\begin{DoxyAuthor}{Author}
+Fabrice Frances 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 Jan 2018 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\index{disc.\+h@{disc.\+h}!color@{color}}
+\index{color@{color}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{color}{color}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf color}}\hypertarget{disc_8h_a37dbdc30935031c05304482e1be89d8f}{}\label{disc_8h_a37dbdc30935031c05304482e1be89d8f}
+This enumeration lists simple colors 
+
+\subsection{Function Documentation}
+\index{disc.\+h@{disc.\+h}!Close\+Window@{Close\+Window}}
+\index{Close\+Window@{Close\+Window}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Close\+Window(void)}{CloseWindow(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Close\+Window (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_a4b0047a8d82b3f053043ca3627d7c403}{}\label{disc_8h_a4b0047a8d82b3f053043ca3627d7c403}
+This function terminates the graphical program \index{disc.\+h@{disc.\+h}!Create\+Window@{Create\+Window}}
+\index{Create\+Window@{Create\+Window}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Create\+Window(char $\ast$title, int width, int height)}{CreateWindow(char *title, int width, int height)}}]{\setlength{\rightskip}{0pt plus 5cm}void Create\+Window (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{title, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_a6458283105ee897b1729eb239bcb20e0}{}\label{disc_8h_a6458283105ee897b1729eb239bcb20e0}
+This function creates a S\+DL window
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & the window title \\
+\hline
+{\em width} & the window width (in pixels) \\
+\hline
+{\em height} & the window height (in pixels) \\
+\hline
+\end{DoxyParams}
+\index{disc.\+h@{disc.\+h}!Draw\+D\+I\+SC@{Draw\+D\+I\+SC}}
+\index{Draw\+D\+I\+SC@{Draw\+D\+I\+SC}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Draw\+D\+I\+S\+C(double x\+\_\+center, double y\+\_\+center, double radius, enum color color)}{DrawDISC(double x_center, double y_center, double radius, enum color color)}}]{\setlength{\rightskip}{0pt plus 5cm}void Draw\+D\+I\+SC (
+\begin{DoxyParamCaption}
+\item[{double}]{x\+\_\+center, }
+\item[{double}]{y\+\_\+center, }
+\item[{double}]{radius, }
+\item[{enum {\bf color}}]{color}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_a4e620e68f58b6460f0f27b321ee5c1bd}{}\label{disc_8h_a4e620e68f58b6460f0f27b321ee5c1bd}
+This function draws a D\+I\+SC with \char`\"{}extended-\/4\+K virtual resolution\char`\"{} (tm ;-\/)
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+center} & the X coordinate of the D\+I\+SC center \\
+\hline
+{\em y\+\_\+center} & the Y coordinate of the D\+I\+SC center \\
+\hline
+{\em radius} & the radius of the D\+I\+SC \\
+\hline
+{\em color} & the color of the D\+I\+SC \\
+\hline
+\end{DoxyParams}
+\index{disc.\+h@{disc.\+h}!Empty\+Space@{Empty\+Space}}
+\index{Empty\+Space@{Empty\+Space}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Empty\+Space(void)}{EmptySpace(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Empty\+Space (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_a6266c52504ef9672f00d96e7ceeccf7d}{}\label{disc_8h_a6266c52504ef9672f00d96e7ceeccf7d}
+This function clears the window. \index{disc.\+h@{disc.\+h}!Update\+Screen@{Update\+Screen}}
+\index{Update\+Screen@{Update\+Screen}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Update\+Screen(void)}{UpdateScreen(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Update\+Screen (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_ad263a1366ce57cab2e64d720b74fbbbd}{}\label{disc_8h_ad263a1366ce57cab2e64d720b74fbbbd}
+This function updates the screen display. Use it when all drawings are done. \index{disc.\+h@{disc.\+h}!Wait\+Click@{Wait\+Click}}
+\index{Wait\+Click@{Wait\+Click}!disc.\+h@{disc.\+h}}
+\subsubsection[{\texorpdfstring{Wait\+Click(void)}{WaitClick(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wait\+Click (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{disc_8h_aa75d162c6d06ce8a5201837257310d36}{}\label{disc_8h_aa75d162c6d06ce8a5201837257310d36}
+This function waits for a mouse click in the S\+DL window.
+
+This is useful for pausing your program without having the cpu run at 100\%... 
